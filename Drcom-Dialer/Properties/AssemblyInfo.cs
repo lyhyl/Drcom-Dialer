@@ -7,11 +7,11 @@ using System.Windows;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("Drcom-Dialer")]
+[assembly: AssemblyTitle("Drcom-Dialer-x")]
 [assembly: AssemblyDescription("广工大DrCOM三方客户端")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("GDUT-DrCOM")]
-[assembly: AssemblyProduct("Drcom-Dialer")]
+[assembly: AssemblyProduct("Drcom-Dialer-x")]
 [assembly: AssemblyCopyright("Copyright © GDUT-DrCOM 2016-2017")]
 [assembly: AssemblyTrademark("GDUT-DrCOM")]
 [assembly: AssemblyCulture("")]

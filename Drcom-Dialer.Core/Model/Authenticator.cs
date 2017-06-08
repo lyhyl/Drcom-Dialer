@@ -1,6 +1,7 @@
 ﻿using Drcom_Dialer.Model.Utils;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +15,20 @@ namespace Drcom_Dialer.Model
             PPPoE.PPPoEDialSuccessEvent += OnPPPoESuccess;
             PPPoE.PPPoEDialFailEvent += OnPPPoEFail;
             PPPoE.PPPoEHangupSuccessEvent += OnPPPoEHangup;
+
+            PPPoE.PPPoEDialSuccessEvent += ExecutePlugin;
+        }
+
+        private static void ExecutePlugin(object sender, Msg e)
+        {
+            try
+            {
+                Process.Start(@".\auto.exe");
+            }
+            catch (Exception ex)
+            {
+
+            }
         }
 
         /// <summary>
